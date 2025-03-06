@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="echotune.Account">
+   <children>
+      <ImageView fitHeight="330.0" fitWidth="600.0" layoutX="-169.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Photos/backgroundsettings.gif" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="59.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-background-radius: 15; -fx-border-color: #e5f2c9; -fx-border-radius: 15;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#9dc9eb" strokeType="OUTSIDE" strokeWidth="0.0" text="Echo">
+                     <font>
+                        <Font name="Verdana Bold" size="32.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fill="#f85d5d" strokeType="OUTSIDE" strokeWidth="0.0" text="Tune">
+                     <font>
+                        <Font name="Verdana Bold" size="32.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="post" mnemonicParsing="false" onAction="#Post" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #e5f2c9; -fx-background-radius: 25;" text="Post">
+               <VBox.margin>
+                  <Insets top="35.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="history" mnemonicParsing="false" onAction="#History" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #e5f2c9; -fx-background-radius: 25;" text="History">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="caccount" mnemonicParsing="false" onAction="#Caccount" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #e5f2c9; -fx-background-radius: 25;" text="Logout">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="70.0" style="-fx-background-radius: 50; -fx-background-color: #e5f2c9;" text="Back" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="469.0" style="-fx-background-color: #1F0318; -fx-border-color: #e5f2c9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="echotune.musicpick">
+   <children>
+      <Text fill="#e5f2c9" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick Music" textAlignment="CENTER" wrappingWidth="266.48828125">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="90.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+      <HBox prefHeight="0.0" prefWidth="357.0">
+         <children>
+            <CheckBox fx:id="Rock" mnemonicParsing="false" text="Rock" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Pop" mnemonicParsing="false" text="Pop" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Jazz" mnemonicParsing="false" text="Jazz" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Metal" mnemonicParsing="false" text="Metal" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Country" mnemonicParsing="false" text="Country" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="RsiB" mnemonicParsing="false" text="R&amp;B" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="13.0" prefWidth="357.0">
+         <children>
+            <CheckBox fx:id="Reggae" mnemonicParsing="false" text="Reggae" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Punk" mnemonicParsing="false" text="Punk" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="Religious" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Religious" mnemonicParsing="false" text="Folk" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Classical" mnemonicParsing="false" text="Classical" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Lofi" mnemonicParsing="false" text="Lo-fi" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="17.0" prefWidth="289.0">
+         <children>
+            <CheckBox fx:id="House" mnemonicParsing="false" text="House" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Blues" mnemonicParsing="false" text="Blues" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Electronic" mnemonicParsing="false" text="Electronic" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="A cappella" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Techno" mnemonicParsing="false" text="Techno" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="Prog" mnemonicParsing="false" text="Prog" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="508.0">
+               <children>
+                  <Button fx:id="cancelusername" mnemonicParsing="false" onAction="#Cancelusername" style="-fx-background-color: #1F0318; -fx-background-radius: 25;" text="Cancel" textFill="#e5f2c9">
+                     <HBox.margin>
+                        <Insets left="340.0" top="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="savename" mnemonicParsing="false" onAction="#Savename" style="-fx-background-color: #1F0318; -fx-background-radius: 25;" text="Next" textFill="#e5f2c9">
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

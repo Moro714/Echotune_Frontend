@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="358.0" style="-fx-background-color: #1F0318; -fx-border-color: #E5F2C9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="echotune.Crearecont">
+   <children>
+      <Text fill="#e5f2c9" strokeType="OUTSIDE" strokeWidth="0.0" text="Create an Account" textAlignment="CENTER" wrappingWidth="266.48828125">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Text>
+      <Text fx:id="userexista" strokeType="OUTSIDE" strokeWidth="0.0" text="The Username is taken" visible="false">
+         <VBox.margin>
+            <Insets left="20.0" top="25.0" />
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="email" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="250.0" promptText="E-Mail" style="-fx-border-color: Black; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="username" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="250.0" promptText="Username" style="-fx-border-color: Black; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="password" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="250.0" promptText="Password" style="-fx-border-color: Black; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <HBox prefHeight="65.0" prefWidth="508.0">
+         <children>
+            <Button fx:id="cancelusername" mnemonicParsing="false" onAction="#Cancelusername" style="-fx-background-color: #1F0318; -fx-background-radius: 25;" text="Cancel" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets left="250.0" top="32.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="next_button" ellipsisString="#e5f2c9" mnemonicParsing="false" onAction="#onNextButtonPressed" style="-fx-background-color: #1F0318; -fx-background-radius: 25;" text="Next" textFill="#e5f2c9">
+               <HBox.margin>
+                  <Insets top="32.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
